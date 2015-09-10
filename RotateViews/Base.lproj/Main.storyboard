@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P29-KT-Gkb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="0.1986902327" blue="0.84806163639999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="OMl-FK-1iv" kind="embed" id="bNF-FT-2oA"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32013230539999998" green="0.67348672710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P29-KT-Gkb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KD6-k5-nTU"/>
+                            <constraint firstItem="P29-KT-Gkb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SSl-o5-GdM"/>
+                            <constraint firstAttribute="trailing" secondItem="P29-KT-Gkb" secondAttribute="trailing" id="liP-pT-0Xz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P29-KT-Gkb" secondAttribute="bottom" id="mAD-DR-sUu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewContainer" destination="P29-KT-Gkb" id="3Rc-FJ-J4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48" y="383"/>
+        </scene>
+        <!--Landscape-->
+        <scene sceneID="w7J-mO-vaa">
+            <objects>
+                <viewController storyboardIdentifier="Landscape" title="Landscape" id="OMl-FK-1iv" customClass="LandscapeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mF9-Zz-z5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vxw-Ay-MwU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lmp-MS-fpO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-iP-tEA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="RRC-vQ-JET"/>
+                                    <constraint firstAttribute="height" constant="26" id="acX-Yv-kco"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ2-q4-Os8">
+                                <rect key="frame" x="0.0" y="100" width="600" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="VHR-FZ-Ml3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74509803919999995" green="0.050980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZQ2-q4-Os8" firstAttribute="top" secondItem="Hv4-iP-tEA" secondAttribute="bottom" constant="74" id="1Cf-yb-MkP"/>
+                            <constraint firstAttribute="trailing" secondItem="Hv4-iP-tEA" secondAttribute="trailing" id="EHd-bM-3Y5"/>
+                            <constraint firstItem="ZQ2-q4-Os8" firstAttribute="leading" secondItem="lmp-MS-fpO" secondAttribute="leading" id="F0X-i7-2B7"/>
+                            <constraint firstItem="Hv4-iP-tEA" firstAttribute="top" secondItem="mF9-Zz-z5A" secondAttribute="bottom" id="XJW-ws-s4X"/>
+                            <constraint firstAttribute="trailing" secondItem="ZQ2-q4-Os8" secondAttribute="trailing" id="a2S-W4-iC9"/>
+                            <constraint firstItem="Hv4-iP-tEA" firstAttribute="leading" secondItem="lmp-MS-fpO" secondAttribute="leading" id="gVL-46-ek3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="ZQ2-q4-Os8" id="jrG-tG-v8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeC-OE-n1k" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48" y="1124"/>
+        </scene>
+        <!--Portrait-->
+        <scene sceneID="r8x-mP-GuR">
+            <objects>
+                <viewController storyboardIdentifier="Portrait" title="Portrait" id="zFQ-zM-r73" customClass="PortraitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WaW-nQ-UXr"/>
+                        <viewControllerLayoutGuide type="bottom" id="mji-hv-Vrl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="blH-ct-LgD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-tv-02y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="c95-iw-vSg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="uwn-Dm-KhR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portrait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbx-r1-MRd">
+                                <rect key="frame" x="0.0" y="200" width="600" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="hHt-Vr-zXk"/>
+                                    <constraint firstAttribute="height" constant="26" id="hUM-Rf-2cV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.093884259849999999" green="0.42408875660000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="K4r-tv-02y" secondAttribute="trailing" id="OQu-2N-W2o"/>
+                            <constraint firstItem="Jbx-r1-MRd" firstAttribute="leading" secondItem="blH-ct-LgD" secondAttribute="leading" id="SAy-hM-gnv"/>
+                            <constraint firstItem="Jbx-r1-MRd" firstAttribute="top" secondItem="K4r-tv-02y" secondAttribute="bottom" constant="174" id="SNs-59-HTH"/>
+                            <constraint firstItem="K4r-tv-02y" firstAttribute="top" secondItem="blH-ct-LgD" secondAttribute="top" id="gLi-by-V1h"/>
+                            <constraint firstItem="K4r-tv-02y" firstAttribute="leading" secondItem="blH-ct-LgD" secondAttribute="leading" id="jbX-0I-cCf"/>
+                            <constraint firstAttribute="trailing" secondItem="Jbx-r1-MRd" secondAttribute="trailing" id="s2p-9G-x4n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="Jbx-r1-MRd" id="g0w-KK-egf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxD-Lh-obm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="383"/>
+        </scene>
+    </scenes>
+</document>
